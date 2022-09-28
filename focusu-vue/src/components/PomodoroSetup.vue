@@ -8,11 +8,19 @@
             <p> Short Break </p>
         </div>
         <div class = "pomodoro-types">
-            <p> Long Break </p>
+            <p> Long Break </p>    
         </div>
+
         <div class = "timer">
             <div class="current-time">
                     <span class="minutes">25</span>:<span class="seconds">00</span>
+            </div>
+        </div>
+
+        <div class = "pomodoro-types">
+            <div class = "btn">
+                <button>Start</button>
+                <button>Restart</button>
             </div>
         </div>
     </div>
