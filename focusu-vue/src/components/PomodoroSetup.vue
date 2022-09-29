@@ -17,11 +17,9 @@
             </div>
         </div>
 
-        <div class = "pomodoro-types">
-            <div class = "btn">
-                <button>Start</button>
-                <button>Restart</button>
-            </div>
+        <div class = "pomodoro-start">
+            <button class="start-btn">START</button>
+            <button class="restart-btn">RESTART</button>
         </div>
     </div>
 </template>

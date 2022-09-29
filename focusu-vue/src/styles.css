@@ -4,11 +4,37 @@ body {
   background-size: cover;
 }
 
-.btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50, -50);
+.pomodoro-start{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  width: 328px;
+  height: 72px;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.start-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 36px;
+
+  width: 149px;
+  height: 52px;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .navbar {
