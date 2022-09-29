@@ -37,6 +37,24 @@ body {
   flex-grow: 0;
 }
 
+.restart-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 36px;
+
+  width: 149px;
+  height: 52px;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
 .navbar {
     /* background: rgb(196, 32, 32); */
     padding: 1em;
