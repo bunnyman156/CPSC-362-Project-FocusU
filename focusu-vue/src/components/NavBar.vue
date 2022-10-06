@@ -10,7 +10,7 @@
                 <ul class="primary-nav">
                     <li class="current"><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Tips</a></li>
+                    <!-- <li><a href="#">Tips</a></li> -->
                 </ul>
             </nav>
         </div>
