@@ -1,7 +1,6 @@
 <template>
   <NavBar />
   <PomodoroSetup/>
-
 </template>
 
 <script>
