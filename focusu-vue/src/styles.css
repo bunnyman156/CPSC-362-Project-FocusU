@@ -29,7 +29,7 @@ body {
     cursor: pointer;
   }
 
-  av {
+  nav {
     position: fixed;
     z-index: 99;
     background: white;
@@ -108,7 +108,7 @@ body {
     padding: 12px 96px 12px 111px;
     gap: 50px;
     width: 663px;
-    height: 76px;
+    height: 40px;
     border-radius: 8xp;
   }
   
@@ -129,6 +129,17 @@ body {
     cursor: pointer;
     background:transparent;
     color:black;
+  }
+
+
+  .spotify-container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: flex-start;
+    height: 152;
+    margin-bottom: 0;
+    margin-left: 50px;
   }
 
   /*  */
@@ -180,3 +191,9 @@ body {
     }
   }
 
+/* Spotify iframe css */
+
+
+#spotify-frame{
+  border-radius: 12px;
+}
