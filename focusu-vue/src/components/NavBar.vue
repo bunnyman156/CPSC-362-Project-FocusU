@@ -10,6 +10,8 @@
                 <ul class="primary-nav">
                     <li class="current"><a href="#">{{homeNav}}</a></li>
                     <li><a href="#">{{aboutNav}}</a></li>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
                     <!-- <li><a href="#">Tips</a></li> -->
                 </ul>
             </nav>
