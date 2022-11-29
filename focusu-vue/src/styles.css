@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
 body {
   margin: 0;
   background-image: url("../src/assets/lofiBackground.svg");
@@ -26,7 +29,7 @@ body {
     cursor: pointer;
   }
 
-  av {
+  nav {
     position: fixed;
     z-index: 99;
     background: white;
@@ -62,6 +65,84 @@ body {
     margin: 0.5em;
     cursor: pointer;
   }
+
+  .pomodoro-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    position: absolute;
+    left: 0px;
+    top: 240px;
+    
+  }
+
+  #start-btn{
+    padding: 12px 36px;
+    border-radius: 8px;
+  }
+
+  #restart-btn{
+    margin-left: 10px;
+    padding: 12px 24px;
+    border-radius: 8px;
+  }
+
+  .timer{
+    margin:0px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 85px;
+    color: #FFFFFF;
+  }
+
+  /* three buttons */
+
+  .pomodoro-buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 96px 12px 111px;
+    gap: 50px;
+    width: 663px;
+    height: 40px;
+    border-radius: 8xp;
+  }
+  
+  .pomodoro-btn{
+    padding: 12px;
+    gap: 10px;
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    text-align: center;
+    color:black;
+    background: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+  }
+
+  .pomodoro-btn:hover{
+    cursor: pointer;
+    background:transparent;
+    color:black;
+  }
+
+
+  .spotify-container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: flex-start;
+    height: 152;
+    margin-bottom: 0;
+    margin-left: 50px;
+  }
+
+  /*  */
 
   @media only screen and (min-width: 768px) {
     .mobile-menu,
@@ -109,3 +190,10 @@ body {
       padding: 10em 4em;
     }
   }
+
+/* Spotify iframe css */
+
+
+#spotify-frame{
+  border-radius: 12px;
+}
