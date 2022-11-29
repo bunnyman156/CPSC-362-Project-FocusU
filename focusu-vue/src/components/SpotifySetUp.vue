@@ -8,13 +8,13 @@
 
   <script>
     import {ref} from 'vue'
-    import {useTokens} from '../spotify-api/tokens';
+    // import {useTokens} from '../spotify-api/tokens';
     import SpotifyWebApi from 'spotify-web-api-node';
 
     export default{
       
         setup(){
-            const allTokens = useTokens();
+            // const allTokens = useTokens();
             let availableDevices = ref("");
             const script = document.createElement("script");
             script.src = "https://sdk.scdn.co/spotify-player.js";
@@ -80,7 +80,7 @@
             //     //if the user making the request is non-premium, a 403 FORBIDDEN response code will be returned
             //     console.log('Something went wrong!', err);
             //   });
-            return {allTokens,spotifyApi,availableDevices,script};
+            return {spotifyApi,availableDevices,script};
         }
 
     }
