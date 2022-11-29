@@ -16,15 +16,21 @@
                 </p>
             </div>
 
-
-
             <div class="pomodoro-start">
                 <button v-show="!started" @click="start()" class="pomodoro-btn" id="start-btn">Start</button>
                 <button v-show="started" @click="stop()" class="pomodoro-btn" id="stop-btn">Stop</button>
                 <button @click="restart()" class="pomodoro-btn" id="restart-btn">Restart</button>
             </div>
             <SpotifySetUp/>
+            <div class="task-container">
+                <div id="newtask">
+                    <input type="text" placeholder="Add Tasks">
+                    <button id="push" @click="addTask()">Add</button>
+                </div>
+            <div id="tasks"></div>
+             </div>
         </div>
+        
     </div>
 </template>
 
@@ -82,7 +88,54 @@ export default{
             started.value = false;
             clearInterval(timer);
         };
-        return { started, timer, timerID, settingsUser, minutesBackUp, type, seconds, switchTimerType, start, restart, stop }; //fix
+
+        const addTask = () =>{
+            if(document.querySelector('#newtask input').value.length == 0){
+                alert("Kindly Enter Task Name!!!!")
+            }
+            else{
+                document.querySelector('#tasks').innerHTML += `
+                    <div class="task">
+                        <span id="taskname">
+                            ${document.querySelector('#newtask input').value}
+                        </span>
+                        <button class="delete">
+                            <i class="far fa-trash-alt"></i>
+                        </button>
+                    </div>
+                `;
+                var current_tasks = document.querySelectorAll(".delete");
+                for(var i=0; i<current_tasks.length; i++){
+                    current_tasks[i].onclick = function(){
+                        this.parentNode.remove();
+                    }
+                }
+            }
+        };
+
+        // document.querySelector('#push').onclick = function(){
+        // if(document.querySelector('#newtask input').value.length == 0){
+        //     alert("Kindly Enter Task Name!!!!")
+        // }
+        // else{
+        //     document.querySelector('#tasks').innerHTML += `
+        //         <div class="task">
+        //             <span id="taskname">
+        //                 ${document.querySelector('#newtask input').value}
+        //             </span>
+        //             <button class="delete">
+        //                 <i class="far fa-trash-alt"></i>
+        //             </button>
+        //         </div>
+        //     `;
+        //     var current_tasks = document.querySelectorAll(".delete");
+        //     for(var i=0; i<current_tasks.length; i++){
+        //         current_tasks[i].onclick = function(){
+        //             this.parentNode.remove();
+        //         }
+        //     }
+        // }
+        return { started, timer, timerID, settingsUser, minutesBackUp, type, seconds, switchTimerType, start, restart, stop, addTask}; //fix
     },
     components: { SpotifySetUp }
 }
