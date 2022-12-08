@@ -1,5 +1,13 @@
 <template>
-  <Modal v-show="modalActive" @close-modal="(modalActive = false)"/>
+  <Modal @close ="toggleModal" :modalActive = "modalActive">
+  <div class="modal-content">
+    <h1> About </h1>
+    <p> FocusU was designed as a way to combine the Pomodoro Technique with the lofi-study aesthetic to help students get in the zone. </p>
+
+    <p> The Pomodoro Technique is a study method which utilizes a 25 minute timer followed by a 5 minute break.</p>
+  </div>
+</Modal>
+
   <div class="app">
     <div class="navbar">
         <div class="container">
@@ -10,9 +18,9 @@
                 <br>
                 <ul class="primary-nav">
                     <li class="current"><a href="#">Home</a></li>
-                    <li><a href="#" @click="toggleModal">About</a></li>
-                    <!-- <button @click ="toggleModal" type = "button">Open Modal</button> -->
-                    <!-- <li><a href="#">Tips</a></li> -->
+                    <li><a href="#">About</a></li>
+                    <button @click ="toggleModal" type = "button">Open Modal</button>
+                    <!-- <li><a href="#">Tips</a></li> -->S
                 </ul>
             </nav>
         </div>

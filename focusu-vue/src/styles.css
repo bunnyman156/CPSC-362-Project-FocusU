@@ -283,3 +283,48 @@ body {
   width: 40px;
   border-radius: 5px;
 }
+
+/* modal css */
+
+.modal-overlay {
+  position: fixed;
+  z-index: 1; /* so its ontop of everything else*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #000000da;
+}
+
+.modal{
+  text-align: center;
+  background-color: white;
+  height: 400px;
+  width: 500px;
+  margin-top: 10%;
+  padding: 60px 0;
+  border-radius: 20px;
+}
+
+.close{
+  margin-top: 10%;
+  margin-bottom: 35.5%;
+}
+
+.close:hover{
+  cursor: pointer;
+  background-color: white;
+}
+
+.modal-inner{
+  display: grid;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+} 
